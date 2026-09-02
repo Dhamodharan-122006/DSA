@@ -11,7 +11,6 @@ class Solution:
         for num in prefix:
             ans += num
             res.append(ans)
-        print(res)
         maxi = max(res)
         if maxi <= capacity:
             return True
