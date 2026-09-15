@@ -5,7 +5,6 @@ class Solution:
         for i,val in enumerate(nums):
             if dic[val] == 3:
                 res[val].append(i)
-        print(res)
         ct = 0
         for value in res.values():
             a = value
