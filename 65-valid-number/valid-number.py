@@ -1,6 +1,13 @@
 class Solution:
     def isNumber(self, s: str) -> bool:
+        s = s.strip()
+
         try:
-            return (float(s) or float(s) == 0) and not('n' in s)
+            x = float(s)
         except:
             return False
+
+        if s.lower() in ["inf", "+inf", "-inf", "infinity", "+infinity", "-infinity", "nan"]:
+            return False
+
+        return True
