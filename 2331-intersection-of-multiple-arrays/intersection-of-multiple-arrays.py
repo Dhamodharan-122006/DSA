@@ -6,9 +6,7 @@ class Solution:
         for i in nums:
             res = res + i
         dic = Counter(res)
-        print(dic)
         maxi = max(dic.values())
-        print(maxi)
         ans = []
         if maxi > 1:
             for key,value in dic.items():
